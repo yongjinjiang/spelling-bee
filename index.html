@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf9f6">
+  <meta name="description" content="Build your spelling confidence with a playful word bank, study cards, audio review, and spelling challenges.">
+  <title>Spelling Bee · Word Bank</title>
+  <link rel="icon" href="./assets/bee.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#bank">
+        <span class="brand-mark"><img src="./assets/bee.svg" alt="" width="26" height="26"></span>
+        <span>Spelling<span class="brand-accent"> Bee</span></span>
+      </a>
+      <nav id="navigation" class="navigation" aria-label="Main navigation"></nav>
+      <button id="profile-button" type="button" class="profile-button" aria-haspopup="dialog"></button>
+    </div>
+  </header>
+  <main id="main" class="shell" tabindex="-1"></main>
+  <footer class="shell site-footer">
+    <a class="footer-brand" href="#bank"><img src="./assets/bee.svg" width="21" height="21" alt=""> Spelling Bee</a>
+    <span>Your progress is saved on this device.</span>
+  </footer>
+  <div id="toast" class="toast" role="status"></div>
+  <dialog id="dialog"></dialog>
+  <input id="backup-file" type="file" accept=".json,application/json" hidden>
+</body>
+</html>
